@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+        <com.example.userprofile.Circular_Image_View.RoundedImageView
+            android:id="@+id/user_profile"
+            app:srcCompat="@drawable/default_img"
+            style="@style/reg_imageview" />
+
+        <TextView
+            android:id="@+id/set_name"
+            android:textColor="@color/reg_edt_color"
+            style="@style/registration_edt"/>
+        <TextView
+            android:id="@+id/set_email"
+            android:textColor="@color/reg_edt_color"
+            style="@style/registration_edt" />
+
+     <TextView
+         android:id="@+id/set_gender"
+         android:textColor="@color/reg_edt_color"
+         style="@style/registration_edt"/>
+
+        <Button
+            android:id="@+id/user_update"
+            style="@style/reg_button"
+            android:text="@string/user_update"/>
+
+            <Button
+                android:id="@+id/user_delete"
+                style="@style/reg_button"
+                android:text="@string/user_delete" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">UserProfile</string>
+
+
+    <string name="splsh_screen_1_txt">Online Study Portal.</string>
+
+    <string name="reg_name">Eneter Name Here</string>
+
+    <string name="reg_email">Enter Email-id Here</string>
+
+    <string name="reg_pass">Enter Password Here</string>
+
+    <string name="img_text">Select Profile Photo</string>
+
+    <string name="btn_signup">Sign Up</string>
+
+    <string name="reg_question">Already Registered?</string>
+
+    <string name="user_login">LogIn</string>
+
+    <string name="login">LOGIN</string>
+
+    <string name="new_acc">New User? Create Account</string>
+
+    <string name="login_id_hint">Enter User Id here</string>
+
+    <string name="user_update">Update</string>
+
+    <string name="user_delete">Delete Account</string>
+
+    <string name="menu_setting">Setting</string>
+
+    <string name="menu_logout">SignOut</string>
+</resources>
