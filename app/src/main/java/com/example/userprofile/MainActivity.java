@@ -7,6 +7,8 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -37,8 +39,6 @@ byte[] img;
         user_name=findViewById(R.id.set_name);
         user_email=findViewById(R.id.set_email);
         user_sex=findViewById(R.id.set_gender);
-        update=findViewById(R.id.user_update);
-        delete=findViewById(R.id.user_delete);
         imageView=findViewById(R.id.user_profile);
         helper=new DatabaseHelper(this);
 
@@ -49,23 +49,31 @@ byte[] img;
                 name=getIntent().getStringExtra("id");
                 password=getIntent().getStringExtra("pass");
         }
-
-        //fetching details from database
-        Cursor cursor=helper.getdata(name,password);
-        while(cursor.moveToNext()){
-            //int id=cursor.getInt(0);
-             name=cursor.getString(1);
-             email=cursor.getString(2);
-             gender=cursor.getString(3);
-             //img=cursor.getBlob(4);
+        if(name.isEmpty() || password.isEmpty()){
+            startActivity(new Intent(MainActivity.this,User_Registration.class));
         }
+        else {
+
+            //fetching details from database
+            Cursor cursor = helper.getdata(name, password);
+            while (cursor.moveToNext()) {
+                int id = cursor.getInt(0);
+                name = cursor.getString(1);
+                email = cursor.getString(2);
+                gender = cursor.getString(3);
+                img = cursor.getBlob(4);
+            }
+
 //set values to textview n imageview
-        user_name.setText("Name:- "+name);
-        user_email.setText("Email:- "+email);
-        user_sex.setText("SEX:- "+gender);
-        //imageView.setImageBitmap();
+            user_name.setText("Name:- " + name);
+            user_email.setText("Email:- " + email);
+            user_sex.setText("SEX:- " + gender);
+            Bitmap bitmap = BitmapFactory.decodeByteArray(img, 0, img.length);
+            imageView.setImageBitmap(bitmap);
+        }
 
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

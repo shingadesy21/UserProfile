@@ -61,5 +61,12 @@ DatabaseHelper helper;
                 }
             }
         });
+        new_user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LogIn.this,User_Registration.class));
+                finish();
+            }
+        });
     }
 }

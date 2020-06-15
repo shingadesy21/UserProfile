@@ -8,19 +8,21 @@
 
     </style>
 
-    <style name="custome_theme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+    <style name="custome_theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="spalsh_screen_1_txt" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="android:gravity">center</item>
-        <item name="android:layout_width">250dp</item>
-        <item name="android:layout_height">250dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">50dp</item>
         <item name="android:text">@string/splsh_screen_1_txt</item>
         <item name="android:layout_marginRight">30dp</item>
         <item name="android:layout_marginLeft">30dp</item>
-        <item name="android:textColor">@color/reg_edt_color</item>
+        <item name="android:textColor">@color/color_white</item>
     </style>
 
 

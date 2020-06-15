@@ -69,7 +69,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public Cursor getdata(String name,String pass)
     {
             SQLiteDatabase database=getReadableDatabase();
-            String[] column={COL_1,USER_NAME,USER_EMAIL,USER_GENDER};
+            String[] column={COL_1,USER_NAME,USER_EMAIL,USER_GENDER,"image"};
             String selection="U_NAME"+"=?"+" and "+"U_PASSWORD"+"=?";
             String[] selectionarrays={name,pass};
             Cursor cursor=database.query(TABLE_NAME,column,selection,selectionarrays,null,null,null);

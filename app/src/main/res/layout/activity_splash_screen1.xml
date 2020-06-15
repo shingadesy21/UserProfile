@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Splash_Screen.SplashScreen1"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@color/reg_edt_color">
     <TextView
         android:id="@+id/spalsh_txt"
         style="@style/spalsh_screen_1_txt"/>

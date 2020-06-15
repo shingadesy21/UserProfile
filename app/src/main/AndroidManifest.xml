@@ -10,14 +10,21 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/custome_theme">
         <activity android:name=".Intero_Screen.Welcome_Intro"></activity>
-        <activity android:name=".LogIn" /> <!-- <activity android:name=".User_Registration"></activity> -->
-        <activity android:name=".User_Registration" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".LogIn"
+            android:theme="@style/AppTheme"
+            android:label="LOGIN"/> <!-- <activity android:name=".User_Registration"></activity> -->
+        <activity android:name=".User_Registration"
+            android:theme="@style/AppTheme"
+            android:label="REGISTRATION"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:label="PROFILE"/>
         <activity android:name=".Splash_Screen.SplashScreen1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

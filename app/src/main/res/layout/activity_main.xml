@@ -33,17 +33,6 @@
          android:textColor="@color/reg_edt_color"
          style="@style/registration_edt"/>
 
-        <Button
-            android:id="@+id/user_update"
-            style="@style/reg_button"
-            android:text="@string/user_update"/>
-
-            <Button
-                android:id="@+id/user_delete"
-                style="@style/reg_button"
-                android:text="@string/user_delete" />
-
-
     </LinearLayout>
 
 </RelativeLayout>

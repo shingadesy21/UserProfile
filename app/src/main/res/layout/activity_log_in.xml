@@ -17,6 +17,7 @@
     style="@style/registration_edt"/>
     <EditText
         android:id="@+id/user_pass"
+        android:hint=""
        style="@style/registration_edt"/>
         <Button
             android:id="@+id/user_login"

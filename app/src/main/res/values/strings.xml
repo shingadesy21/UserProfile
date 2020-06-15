@@ -24,6 +24,8 @@
 
     <string name="login_id_hint">Enter User Id here</string>
 
+    <string name="login_pass_hint">Enter Password here</string>
+
     <string name="user_update">Update</string>
 
     <string name="user_delete">Delete Account</string>
@@ -31,4 +33,5 @@
     <string name="menu_setting">Setting</string>
 
     <string name="menu_logout">SignOut</string>
+
 </resources>

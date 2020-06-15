@@ -52,7 +52,6 @@ public class Welcome_Intro extends AppCompatActivity {
         }
         setContentView(R.layout.activity_welcome__intro);
 
-        getSupportActionBar().hide();
 
         // ini views
         btnNext = findViewById(R.id.btn_next);
@@ -150,10 +149,6 @@ public class Welcome_Intro extends AppCompatActivity {
         btnNext.setVisibility(View.INVISIBLE);
         btnGetStarted.setVisibility(View.VISIBLE);
         tvSkip.setVisibility(View.INVISIBLE);
-
-
-
-
 
     }
 }
